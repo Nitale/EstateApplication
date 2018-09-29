@@ -1,2 +1,2 @@
 # EstateApplication
-A student project to improve application programming.
+A student project to learn application programming.
