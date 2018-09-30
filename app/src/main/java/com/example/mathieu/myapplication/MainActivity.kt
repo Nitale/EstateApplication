@@ -2,6 +2,9 @@ package com.example.mathieu.myapplication
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import android.widget.Spinner
+import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -10,8 +13,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Example of a call to a native method
-        sample_text.text = stringFromJNI()
+        // Variables declaration
+        private TextView mGreetingText;
+        private button mPlayButton;
+
+        mGreetingText = (TextView) findViewById(R.id.welcome_text_name_chosen);
+        mPlayButton = (Button) findViewById(R.id.welcome_play_btn);
+
     }
 
     /**
