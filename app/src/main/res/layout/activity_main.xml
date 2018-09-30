@@ -10,7 +10,7 @@
         android:id="@+id/welcome_text_name_chosen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Choose your name in the list in order to see your schedule"
+        android:text="Type your name in order to know your schedule"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.051"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -18,14 +18,22 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.032" />
 
+    <EditText
+        android:id="@+id/welcome_name_chosen_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please type your name"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="35dp" />
+
     <Button
         android:id="@+id/welcome_play_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:padding="30dp"
-        android:text="Let's play"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="35dp" />
+        android:text="Next"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="81dp" />
 
 </android.support.constraint.ConstraintLayout>
